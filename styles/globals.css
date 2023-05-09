@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* used to abstract away either more specific styles than "pure" Tailwind, or
+to take care of classes that could be visually rather large (skill section for instance) */
+
+/* focus-visible for accessibility */
+*:focus-visible {
+  outline: thin dotted 1px;
+  outline-color: #E6E3D3;
+}
+
+/* scroll behavior doesn't work with tailwind if clicking to IDs and not classes */
+html {
+  --scroll-behavior: smooth!important;
+  scroll-behavior: smooth!important;
+}
+
+.header-border {
+  height: 1px;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    transparent 30%,
+    #111827 40%,
+    #111827 60%,
+    transparent 70%
+  );
+} 
+
+.body-border {
+  height: 1px;
+  width: 100%;
+  opacity: 35%;
+  background-image: linear-gradient(
+    to right,
+    transparent 5%,
+    #111827 12%,
+    #111827 88%,
+    transparent 95%
+  );
+}
+
+.nav-divider {
+  height: 4rem;
+  width: 1px;
+  opacity: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 5%,
+    #111827 55%,
+    #111827 100%
+  );
+}
+
+.skill-section > ul > li {
+  height: 140px;
+  width: 180px;
+  background-color: white;
+  border-radius: 9999px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  margin: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .skill-section > ul > li {
+    width: 55%;
+    border-radius: 40px;
+    height: 55%;
+  }
+  .skill-section > ul > li > a > img {
+    height: 3.8rem;
+    width: auto;
+    margin: auto;
+  }
+}
+
+.skill-section > ul > li > a > img {
+  height: 3.8rem;
+  width: auto;
+  margin: auto;
+}
+
+.skill-section > ul > li > a > p {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.75rem;
+  font-size: 1.1rem;
+  font-family: "Inter Tight", "sans-serif";
+  font-weight: 500;
+}

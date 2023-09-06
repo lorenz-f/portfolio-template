@@ -1,4 +1,4 @@
-import ProjectOne from "./Projects/ProjectOne/ProjectOne";
+import ProjectOne from "./Projects/ProjectOne";
 import ProjectTwo from "./Projects/ProjectTwo";
 import ProjectThree from "./Projects/ProjectThree";
 import ProjectFour from "./Projects/ProjectFour";

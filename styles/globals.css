@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*:focus-visible {
+  outline: thin dotted 1px;
+  outline-color: #E6E3D3;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+ 
+.header-border {
+  height: 1px;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    transparent 30%,
+    #111827 40%,
+    #111827 60%,
+    transparent 70%
+  );
+} 
+  
+.body-border {
+  height: 1px;
+  width: 100%;
+  opacity: 35%;
+  background-image: linear-gradient(
+    to right,
+    transparent 5%,
+    #111827 12%,
+    #111827 88%,
+    transparent 95%
+  );
+}
+
+.nav-divider {
+  height: 4rem;
+  width: 1px;
+  opacity: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 5%,
+    #111827 55%,
+    #111827 100%
+  );
+}
+ 
+.skill-section > ul > li { 
+  height: 140px;
+  width: 180px;
+  background-color: white;
+  border-radius: 9999px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  margin: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} 
+
+.skill-section > ul > li > a > div {
+  height: 3.8rem;
+  width: auto;
+  margin: auto;
+}
+
+.skill-section > ul > li > a > p {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: .75rem;
+  font-size: 1.1rem;
+  font-family: 'Inter Tight', 'sans-serif';
+  font-weight: 500;
+} 
+
+@media only screen and (max-width: 800px) {
+  .skill-section > ul > li { 
+    width: 82%; 
+    border-radius: 10px;
+    height: 50px;
+    margin: 4px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  /* need width here */
+   .skill-section > ul > li > a {
+    height: 2.8rem; 
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .skill-section > ul > li > a > img {
+    height: 2.1rem;  
+    margin-right: 8px;
+    order: 2;
+  }
+  .skill-section > ul > li > a > p {
+    margin: auto 0 auto 8px;
+    order: 1;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1100px) {
+  .intro > * {
+    font-size: 1.25rem; 
+    line-height: 1.75rem;
+  }
+} 
+ 

@@ -17,12 +17,7 @@ export default function Skills() {
         <div className="skill-section font-dm text-black text-center flex flex-col w-full h-full mb-8 p-2 items-center justify-center sm:px-0">
           <ul className="w-full flex flex-row items-center justify-center sm:flex-col">
             <li className="transition-all ease-in-out hover:scale-105 sm:hover:scale-100">
-              <a
-                className="flex justify-between"
-                target="_blank"
-                href=""
-                rel="noreferrer"
-              >
+              <a target="_blank" href="" rel="noreferrer">
                 <p>Skill 1</p>
               </a>
             </li>
